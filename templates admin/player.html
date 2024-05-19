@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cricks11-Player</title>
+  <link rel="icon" type="x-icon" href="/static/img/log1.png">
+  <link rel="stylesheet" href="/static/css/player.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="/static/js/jquery-3.7.1.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      background-image: url("/static/img/ground.png");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 1300px;
+      background-position-y: -100px;
+      background-color: rgba(254, 252, 252, 0);
+      -webkit-backdrop-filter: blur(2px);
+      backdrop-filter: blur(2px);
+
+    }
+
+    .v
+
+    /*header*/
+      {
+      background: #8C8681;
+      text-align: left;
+      margin-top: -5px;
+      padding: 0 5%;
+      height: 100px;
+      width: 1272px;
+    }
+
+    .v1
+
+    /*header-text*/
+      {
+      font-size: 50px;
+      color: white;
+    }
+
+    .v3 {
+      padding-top: 10px;
+    }
+
+    .glyphicon {
+      margin-left: 810px;
+      color: white;
+    }
+
+    .rt
+
+    /*alert-box*/
+      {
+      width: 50%;
+      margin-left: 370px;
+      height: 50px;
+      position: fixed;
+    }
+
+    .alert {
+      width: 500px;
+      height: 50px;
+      text-align: center;
+      position: fixed;
+    }
+
+    .cl
+
+    /*imag*/
+      {
+      width: 30px;
+      height: 35px;
+      background-color: transparent;
+    }
+
+
+    .lk
+
+    /*scorllbar*/
+      {
+      overflow-y: scroll;
+      margin-top: 30px;
+      height: 300px;
+    }
+
+    .cv
+
+    /*table*/
+      {
+      width: 82%;
+      margin-left: 140px;
+      border-collapse: collapse;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+
+    .vc {
+      background-color: #8C8681;
+      font-size: 20px;
+      text-align: center;
+      padding: 20px;
+
+
+    }
+
+    .vc td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      font-size: 20px;
+    }
+
+    .bv td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      font-size: 20px;
+    }
+
+    .sl
+
+    /*button-insert*/
+      {
+      background-color: #8C8681;
+      margin-left: 1180px;
+      margin-top: 20px;
+      border: none;
+      padding: 10px;
+      color: white;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 10px;
+    }
+
+    .jc
+
+    /*model*/
+      {
+      margin-left: 100px;
+      margin-top: 80px;
+      background-color: white;
+      border: black 1px solid;
+      height: 420px;
+      width: 400px;
+    }
+
+    .xz
+
+    /*model hader*/
+      {
+      font-size: 30px;
+      background-color: #8C8681;
+      color: white;
+      padding: 10px;
+      margin-top: -5px;
+      text-align: center;
+    }
+
+    .jk {
+      text-align: center;
+      margin-top: 20px;
+      margin-left: 50px;
+      margin-bottom: 5px;
+    }
+
+    .mb-3
+
+    /*file uploder*/
+      {
+      margin-left: 50px;
+      width: 300px;
+    }
+
+    .xc
+
+    /*insert button*/
+      {
+      background-color: #8C8681;
+      margin-left: 170px;
+      margin-top: 15px;
+      border: none;
+      padding: 10px;
+      color: white;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 10px;
+    }
+
+    .e {
+      margin-top: 30px;
+      margin-left: 400px;
+    }
+
+    .e1 {
+      width: 500px;
+      height: 35px;
+      font-size: 20px;
+      padding: 22px;
+      padding-left: 55px;
+      border-radius: 5px;
+    }
+
+    .e2 {
+      margin-left: -490px;
+    }
+
+    .cl1
+
+    /*imag*/
+      {
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+    }
+
+    /*edit css*/
+    .bn {
+      margin-left: 50px;
+      font-size: 15px;
+    }
+
+    .bn1 {
+      margin-left: 50px;
+      padding: 3px;
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="v">
+    <p class="v3">
+      <b class="v1">show player</b>
+      <a href="/admin_team">
+        <span class="glyphicon glyphicon-remove" style="font-size: 30px;"></span>
+      </a>
+
+    </p>
+
+  </div>
+
+
+  <div class="rt">
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-success alert-dismissible">
+      <button href="#" class="close" data-dismiss="alert" aria-label="close">&times;</button>
+      {{message}}
+    </div>
+    {% endfor %}
+  </div>
+  <form class="e" method="post" action="/search">
+    <input type="text" name="v1" class="e1" placeholder="search here">
+    <a class="e2"><img src="/static/img/search.png" class="cl1"></a>
+  </form>
+
+  <div class="lk">
+    <table class="cv">
+      <tr class="vc">
+        <td>Id</td>
+        <td>playername</td>
+        <td>team</td>
+        <td>Select</td>
+        <td>picture</td>
+        <td>Delete</td>
+        <td>Edit</td>
+      </tr>
+      {% for row in sw %}
+      <tr class="bv">
+        <td>{{row.0}}</td>
+        <td>{{row.1}}</td>
+        <td>{{row.4}}</td>
+        <td>{{row.3}}</td>
+        <td><img class="cl" src="/static/img/{{row.2}}"></td>
+        <td><a href="/deletep/{{row.0}}" class="btn btn-danger">delete</a></td>
+        <td><a class="btn btn-primary" data-toggle="modal" data-target="#edit{{row.0}}">edit</a></td>
+      </tr>
+      <div class="modal fade" id="edit{{row.0}}" role="dialog">
+        <div class="modal-dialog">
+          <div class="jc">
+            <p class="xz">edit player <button type="button" class="close" data-dismiss="modal">&times;</button> </p>
+            <form action="/edit/{{row.0}}" method="POST">
+              <div>
+                <label class="bn">Id:</label>/*no change*/<br>
+                <input type="text" name="playerid" value="{{row.0}} " class="bn1"><br>
+              </div>
+              <div>
+                <label class="bn">PlayerName:</label><br>
+                <input type="text" name="playername" value="{{row.1}}" class="bn1"><br>
+              </div>
+              <div>
+                <label class="bn">Team:</label>/*no change*/<br>
+                <input type="text" name="team" value="{{row.4}}" class="bn1"><br>
+              </div>
+              <label class="bn">Select:</label><br>
+              <select class="bn1" name="selection">
+                <option>batsman</option>
+                <option>bowler</option>
+                <option>allrounder</option>
+                <option>wicketkeeper</option>
+              </select><br>
+              <div>
+                <label class="bn">Picture:</label><br>
+                <div class="mb-3">
+                  <input class="form-control" type="file" id="formFile" name="picture">
+                </div>
+              </div>
+              <button class="xc">update</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </table>
+  </div>
+
+
+
+
+  <div>
+    <button class="sl" data-toggle="modal" data-target="#insert">insert</button>
+  </div>
+  <!--add plyer-->
+  <div class="modal" id="insert" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="jc">
+        <p class="xz">Add player <button type="button" class="close" data-dismiss="modal">&times;</button> </p>
+        <form action="{{url_for('add')}}" method="POST">
+          <div>
+            <label class="bn">playerId:</label><br>
+            <input type="text" name="playerid" class="bn1" placeholder="playerid"><br>
+          </div>
+          <div>
+            <label class="bn">PlayerName:</label><br>
+            <input type="text" name="playername" class="bn1" placeholder="playername"><br>
+          </div>
+          <div>
+            <label class="bn">Team:</label><br>
+            <input type="text" name="team" class="bn1" placeholder="team name"><br>
+          </div>
+          <label class="bn">Select:</label><br>
+          <select class="bn1" name="selection">
+            <option>batsman</option>
+            <option>bowler</option>
+            <option>allrounder</option>
+            <option>wicketkeeper</option>
+          </select><br>
+          <div>
+            <label class="bn">Picture:</label><br>
+            <div class="mb-3">
+              <input class="form-control" type="file" id="formFile" name="picture">
+            </div>
+          </div>
+
+
+          <button class="xc">insert</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

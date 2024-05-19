@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricks11-Point</title>
+    <link rel="icon" type="x-icon" href="/static/img/log1.png">
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/score.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="/static/js/jquery-3.7.1.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <title>score</title>
+        <style>
+            .r1 {
+                background-color: #8C8681;
+                padding: 10px;
+                text-align: center;
+            }
+
+            .r1 label {
+                font-size: 18px;
+                padding: 5px;
+            }
+
+            .yt {
+                background-color: rgb(212, 235, 255);
+                padding: 20px;
+                margin-top: 30px;
+                text-align: center;
+                border-radius: 20px;
+            }
+
+            .yt select {
+                height: 25px;
+                width: 90px;
+            }
+
+            .yt1 {
+                height: 25px;
+                width: 90px;
+            }
+
+            .yu1 {
+                padding: 5px;
+            }
+
+            .ys1 {
+                background-color: rgb(212, 235, 255);
+                padding: 20px;
+                margin-top: 60px;
+                text-align: center;
+                border-radius: 20px;
+            }
+
+            .ys1 select {
+                height: 25px;
+                width: 90px;
+            }
+
+            .yt1 {
+                height: 25px;
+                width: 90px;
+            }
+
+            .yu1 {
+                padding: 5px;
+            }
+
+            .bn {
+                margin-left: 590px;
+                padding: 20px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="r1">
+            <label>{{i2}}</label>vs<label>{{i3}}</label>
+            <h1>point management</h1>
+        </div>
+        <hr>
+        <center><h2 style="text-decoration: underline;">RULES</h2></center>
+        <h3 style="text-align: center;">total runs = total points</h3>
+        <h3 style="text-align: center;">1 wicket  = 4 points</h3>
+        <hr>
+
+        <hr>
+        <h1 style="text-align: center;">{{i2}}'s ponit</h1>
+        <hr>
+
+
+        <table class="table table-bordered table-hover" style="margin-top: 20px; margin-left: 250px; width: 800px;">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>trun</th>
+                    <th>wicket</th>
+                    <th>point</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for i in dd%}
+                <tr>
+                    <td>{{i.0}}</td>
+                    <td>{{i.1}}</td>
+                    <td>{{i.2}}</td>
+                    <td>{{i.3}}</td>
+                </tr>
+                {%endfor%}
+            </tbody>
+
+        </table>
+        <form action="/update" method="POST">
+            <div class="yt">
+                <select name="i0">
+                    {%for i in db1%}
+                    <option>{{i.1}}</option>
+                    {%endfor%}
+                </select>
+                <span class="yu1"><input type="text" placeholder="points" name="i1" class="yt1"></span>
+                <button class="btn-primary" style="border-radius: 20px;">add</button>
+            </div>
+        </form>
+        <hr>
+        <h1 style="text-align: center;">{{i3}}'s point</h1>
+        <hr>
+
+
+        <table class="table table-bordered table-hover" style="margin-top: 20px; margin-left: 250px; width: 800px;">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>trun</th>
+                    <th>wicket</th>
+                    <th>point</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for i in dv%}
+                <tr>
+                    <td>{{i.0}}</td>
+                    <td>{{i.1}}</td>
+                    <td>{{i.2}}</td>
+                    <td>{{i.3}}</td>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+        <form action="/update" method="POST">
+            <div class="ys1">
+                <select name="i0">
+                    {%for i in cc%}
+                    <option>{{i.1}}</option>
+                    {%endfor%}
+                </select>
+                <span class="yu2"><input type="text" placeholder="one" name="i1" class="yt1"></span>
+                <button class="btn-primary" style="border-radius: 20px;">add</button>
+            </div>
+        </form>
+
+        <div class="bn">
+            <a class="btn btn-primary" href="/contest1"> submit</a>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>

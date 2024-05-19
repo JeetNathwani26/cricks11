@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cricks11-Admin-Home</title>
+  <link rel="icon" type="x-icon" href="/static/img/log1.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <script src="/static/js/jquery-3.7.1.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      background-image: url("/static/img/ground.png");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 1050px;
+      background-position-y: 25px;
+      background-position-x: 235px;
+
+
+    }
+
+    .v {
+      background: #8C8681;
+      text-align: right;
+      padding: 0 5%;
+      height: 695px;
+      width: 250px;
+      margin-top: -1%;
+      margin-left: -15px;
+    }
+
+    .l {
+      margin-top: -40px;
+
+      color: rgb(252, 250, 250);
+      font-size: 40px;
+    }
+
+    .h {
+      color: blue;
+      font-size: 50px;
+    }
+
+    .v img {
+      margin-top: 30px;
+      margin-left: -60px;
+      height: 80px;
+      width: 250px;
+    }
+
+
+    .v ul {
+      list-style: none;
+      position: relative;
+    }
+
+    .v ul li a {
+      text-decoration: none;
+      color: rgb(247, 244, 244);
+      padding-top: 40px;
+      float: left;
+      margin-left: 10px;
+      font-size: 25px;
+      transition: all 0.2 ease;
+      display: block;
+    }
+
+    .v ul li a:hover {
+      color: aqua;
+    }
+
+    .i {
+      width: 235px;
+      margin-left: -50px;
+      box-shadow: 20px;
+    }
+
+
+    .rt {
+      width: 50%;
+      margin-left: 550px;
+      margin-top: -540px;
+      height: 50px;
+      align-items: center;
+      position: fixed;
+    }
+
+
+    .alert {
+      width: 500px;
+      height: 50px;
+      text-align: center;
+      position: fixed;
+    }
+
+    .ub {
+      font-size: 50px;
+      margin-left: 250px;
+      margin-top: -450px;
+      height: 150px;
+      text-shadow: -2px -2px 4px black;
+
+    }
+    .ub1{
+      display: flex;
+      justify-content: center;
+      
+    }
+
+    .ub .op2 {
+      margin-left: 200px;
+      margin-top: -20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="v">
+    <div style="margin-left: -20px;">
+      <img src="/static/img/logo.png">
+      <h1 class="l">Cricks<span class="h">11</span></h1>
+    </div>
+    <hr class="i">
+    <ul>
+      <li><a href="/admin_home" style="color: aqua;">HOME</a></li>
+      <li><a href="/match">MATCH</a></li>
+      <li><a href="/admin_team">TEAM</a></li>
+      <li><a href="/vouchers">CONTEST</a></li>
+      <li><a href="/adver">ADVERTICS</a></li>
+    </ul>
+  </nav>
+  <div class="rt">
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-success alert-dismissible fade in">
+      <button href="#" class="close" data-dismiss="alert" aria-label="alert">&times;</button>
+      {{message}}
+    </div>
+    {% endfor %}
+
+  </div>
+
+  <div class="ub1">
+  <div class="ub">
+    <p class="op1">welcome!</p>
+
+    <p class="op2"> {{user}}</p>
+  </div>
+</div>
+
+
+</body>
+
+</html>

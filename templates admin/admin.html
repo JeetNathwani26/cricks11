@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<head>
+
+
+
+  <meta charset="utf-8">
+  <link rel="icon" type="x-icon" href="/static/img/log1.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <script src="/static/js/jquery-3.7.1.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/css/admin.css">
+  <style>
+    .pt {
+      position: fixed;
+    }
+
+    body {
+      background-image: url("/static/img/ground.png");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 1300px;
+      background-position-y: 10px;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+
+    }
+
+
+    .lo {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+      margin-left: 20px;
+      position: fixed;
+    }
+
+    .loh {
+      background-color: #8C8681;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .lof {
+      padding: 20px;
+    }
+
+    .fo {
+      margin-bottom: 15px;
+    }
+
+    .fo label {
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .fo input {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .fo button {
+      background-color: #8C8681;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .alert {
+      width: 100%;
+      margin-left: 15px;
+      height: 50px;
+      text-align: center;
+      margin-top: -300px;
+
+    }
+
+
+    .vc {
+      height: 80px;
+      margin-left: -80px;
+      margin-top: -65px;
+
+    }
+
+    .nb {
+      color: black;
+      margin-left: -140px;
+      margin-top: -20px;
+      font-size: 30px;
+    }
+
+    .be {
+      margin-right: 950px;
+      margin-top: -450px;
+    }
+
+    .bn1 {
+      color: blue;
+      font-size: 50px;
+    }
+  </style>
+  <title>Cricks11-Admin-Login</title>
+</head>
+
+<body>
+
+
+  <div class="be">
+    <img src="/static/img/logo.png" class="vc"><label class="nb">Cricks<span class="bn1">11</span></label>
+  </div>
+  <div class="pt">
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-success alert-dismissible" role="alert">
+      {{message}}
+      <button href="#" class="close" data-dismiss="alert" aria-label="close">&times;</button>
+    </div>
+    {% endfor %}
+  </div>
+
+  <form class="lo" action="/admin" method="POST">
+    <div class="loh">
+      <h2>Admin Login</h2>
+    </div>
+    <div class="lof">
+      <div class="fo">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+      </div>
+      <div class="fo">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+      </div>
+      <div class="fo">
+        <button type="submit">Login</button>
+      </div>
+    </div>
+  </form>
+
+
+</body>
+
+</html>

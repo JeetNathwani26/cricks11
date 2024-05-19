@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>register</title>
+    <link rel="stylesheet" href="/static/css/register.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="/static/img/logo.png">
+        <p>cricks<span>11</span></p>
+    </div>
+    <div class="pt">
+        {% for message in get_flashed_messages() %}
+         <div class="alert alert-warning" role="alert">
+            {{message}}
+          <button href="#" class="close" data-dismiss="alert" aria-label="close">&times;</button>
+          </div> 
+        {% endfor %} 
+      </div>  
+   <div class="kr">
+        <h1 class="h1">Register form</h1>
+       <form action="/sign-up" method="POST">
+            <input type="text" name="nm" placeholder="Name" class="mk"><br><br>
+            <input type="text" name="phone" placeholder="phone" class="ph"><br><br>
+            <input type="password" name="pass" placeholder="password" class="ls"><br><br>
+            <input type="submit" value="submit" class="se">
+       </form>
+   </div>
+</body>
+</html>

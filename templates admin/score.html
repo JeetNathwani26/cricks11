@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/score.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="/static/js/jquery-3.7.1.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <title>Cricks11-Score</title>
+    <link rel="icon" type="x-icon" href="/static/img/log1.png">
+    <style>
+        .r1 {
+            background-color: #8C8681;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .r1 label {
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        .yt {
+            background-color: rgb(212, 235, 255);
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .yt select {
+            height: 25px;
+            width: 90px;
+        }
+
+        .yt1 {
+            height: 25px;
+            width: 90px;
+        }
+
+        .yu1 {
+            padding: 5px;
+        }
+
+        .ys1 {
+            background-color: rgb(212, 235, 255);
+            padding: 20px;
+            margin-top: 60px;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .ys1 select {
+            height: 25px;
+            width: 90px;
+        }
+
+        .yt1 {
+            height: 25px;
+            width: 90px;
+        }
+
+        .yu1 {
+            padding: 5px;
+        }
+
+        .bn {
+            margin-left: 590px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="r1">
+        <label>{{i2}}</label>vs<label>{{i3}}</label>
+        <h1>score management</h1>
+    </div>
+    <hr>
+    <h1 style="text-align: center;">{{i2}}'score</h1>
+    <hr>
+    <h1 style="text-align: center;">batsman</h1>
+    <form action="/run1" method="POST">
+        <div class="yt">
+            <select name="i0">
+                {%for i in db1%}
+                <option>{{i.1}}</option>
+                {%endfor%}
+            </select>
+            <span class="yu1"><input type="text" placeholder="1 run" name="i1" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="2 run" name="i2" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="3 run" name="i3" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="four" name="i4" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="six" name="i5" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="tball" name="i6" class="yt1"></span>
+            <button class="btn-primary" style="border-radius: 20px;">add</button>
+        </div>
+    </form>
+
+    <table class="table table-bordered table-hover" style="margin-top: 20px; margin-left: 250px; width: 800px;">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>one</th>
+                <th>two</th>
+                <th>three</th>
+                <th>four</th>
+                <th>six</th>
+                <th>run</th>
+                <th>tball</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for i in dd%}
+            <tr>
+                <td>{{i.0}}</td>
+                <td>{{i.1}}</td>
+                <td>{{i.2}}</td>
+                <td>{{i.3}}</td>
+                <td>{{i.4}}</td>
+                <td>{{i.5}}</td>
+                <td>{{i.6}}</td>
+                <td>{{i.7}}</td>
+            </tr>
+            {%endfor%}
+        </tbody>
+
+    </table>
+
+    <h1 style="text-align: center;">allrounder</h1>
+    <form action="/run3" method="POST">
+        <div class="yt">
+            <select name="i0">
+                {%for i in dc1%}
+                <option>{{i.1}}</option>
+                {%endfor%}
+            </select>
+            <span class="yu1"><input type="text" placeholder="1 run" name="i1" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="2 run" name="i2" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="3 run" name="i3" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="four" name="i4" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="six" name="i5" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="wideball" name="i6" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="noball" name="i7" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="run" name="i8" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="wicket" name="i9" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="over" name="i10" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="tball" name="i11" class="yt1"></span>
+            <button class="btn-primary" style="border-radius: 20px;">add</button>
+        </div>
+    </form>
+
+    <table class="table table-bordered table-hover" style="margin-top: 20px; margin-left: 250px; width: 800px;">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>one</th>
+                <th>two</th>
+                <th>three</th>
+                <th>four</th>
+                <th>six</th>
+                <th>totalrun</th>
+                <th>wideball</th>
+                <th>noball</th>
+                <th>run</th>
+                <th>wiket</th>
+                <th>over</th>
+                <th>totalball</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for i in df%}
+            <tr>
+                <td>{{i.0}}</td>
+                <td>{{i.1}}</td>
+                <td>{{i.2}}</td>
+                <td>{{i.3}}</td>
+                <td>{{i.4}}</td>
+                <td>{{i.5}}</td>
+                <td>{{i.6}}</td>
+                <td>{{i.7}}</td>
+                <td>{{i.8}}</td>
+                <td>{{i.9}}</td>
+                <td>{{i.10}}</td>
+                <td>{{i.11}}</td>
+                <td>{{i.12}}</td>
+            </tr>
+            {%endfor%}
+        </tbody>
+
+    </table>
+
+    <h1 style="text-align: center;">Bowler</h1>
+    <form action="/run2" method="POST">
+        <div class="yt">
+            <select name="i0">
+                {%for i in dc%}
+                <option>{{i.1}}</option>
+                {%endfor%}
+            </select>
+            <span class="yu1"><input type="text" placeholder="1 run" name="i1" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="2 run" name="i2" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="3 run" name="i3" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="four" name="i4" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="six" name="i5" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="wideball" name="i6" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="noball" name="i7" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="run" name="i8" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="wicket" name="i9" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="over" name="i10" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="tball" name="i11" class="yt1"></span>
+            <button class="btn-primary" style="border-radius: 20px;">add</button>
+        </div>
+    </form>
+
+    <table class="table table-bordered table-hover" style="margin-top: 20px; margin-left: 250px; width: 800px;">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>one</th>
+                <th>two</th>
+                <th>three</th>
+                <th>four</th>
+                <th>six</th>
+                <th>totalrun</th>
+                <th>wideball</th>
+                <th>noball</th>
+                <th>run</th>
+                <th>wiket</th>
+                <th>over</th>
+                <th>tball</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for i in ff%}
+            <tr>
+                <td>{{i.0}}</td>
+                <td>{{i.1}}</td>
+                <td>{{i.2}}</td>
+                <td>{{i.3}}</td>
+                <td>{{i.4}}</td>
+                <td>{{i.5}}</td>
+                <td>{{i.6}}</td>
+                <td>{{i.7}}</td>
+                <td>{{i.8}}</td>
+                <td>{{i.9}}</td>
+                <td>{{i.10}}</td>
+                <td>{{i.11}}</td>
+                <td>{{i.12}}</td>
+            </tr>
+            {%endfor%}
+        </tbody>
+
+    </table>
+    <hr>
+    <h1 style="text-align: center;">{{i3}}'s Score</h1>
+    <hr>
+    <h1 style="text-align: center;">batsman</h1>
+    <form action="/srun3" method="POST">
+        <div class="ys1">
+            <select name="i0">
+                {%for i in cc%}
+                <option>{{i.1}}</option>
+                {%endfor%}
+            </select>
+            <span class="yu2"><input type="text" placeholder="one" name="i1" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="two" name="i2" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="three" name="i3" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="four" name="i4" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="six" name="i5" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="tball" name="i6" class="yt1"></span>
+            <button class="btn-primary" style="border-radius: 20px;">add</button>
+        </div>
+    </form>
+
+    <table class="table table-bordered table-hover" style="margin-top: 20px; margin-left: 250px; width: 800px;">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>one</th>
+                <th>two</th>
+                <th>three</th>
+                <th>four</th>
+                <th>six</th>
+                <th>run</th>
+                <th>tball</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for i in dv%}
+            <tr>
+                <td>{{i.0}}</td>
+                <td>{{i.1}}</td>
+                <td>{{i.2}}</td>
+                <td>{{i.3}}</td>
+                <td>{{i.4}}</td>
+                <td>{{i.5}}</td>
+                <td>{{i.6}}</td>
+                <td>{{i.7}}</td>
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+    <h1 style="text-align: center;">allrounder</h1>
+    <form action="/srun2" method="POST">
+        <div class="yt">
+            <select name="i0">
+                {%for i in dt%}
+                <option>{{i.1}}</option>
+                {%endfor%}
+            </select>
+            <span class="yu1"><input type="text" placeholder="1 run" name="i1" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="2 run" name="i2" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="3 run" name="i3" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="four" name="i4" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="six" name="i5" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="wideball" name="i6" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="noball" name="i7" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="run" name="i8" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="wicket" name="i9" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="over" name="i10" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="tball" name="i11" class="yt1"></span>
+            <button class="btn-primary" style="border-radius: 20px;">add</button>
+        </div>
+    </form>
+
+    <table class="table table-bordered table-hover" style="margin-top: 20px; margin-left: 250px; width: 800px;">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>one</th>
+                <th>two</th>
+                <th>three</th>
+                <th>four</th>
+                <th>six</th>
+                <th>totalrun</th>
+                <th>wideball</th>
+                <th>noball</th>
+                <th>run</th>
+                <th>wiket</th>
+                <th>over</th>
+                <th>tball</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for i in dt1%}
+            <tr>
+                <td>{{i.0}}</td>
+                <td>{{i.1}}</td>
+                <td>{{i.2}}</td>
+                <td>{{i.3}}</td>
+                <td>{{i.4}}</td>
+                <td>{{i.5}}</td>
+                <td>{{i.6}}</td>
+                <td>{{i.7}}</td>
+                <td>{{i.8}}</td>
+                <td>{{i.9}}</td>
+                <td>{{i.10}}</td>
+                <td>{{i.11}}</td>
+                <td>{{i.12}}</td>
+            </tr>
+            {%endfor%}
+        </tbody>
+
+    </table>
+    <h1 style="text-align: center;">Bowler</h1>
+    <form action="/srun4" method="POST">
+        <div class="yt">
+            <select name="i0">
+                {%for i in tt%}
+                <option>{{i.1}}</option>
+                {%endfor%}
+            </select>
+            <span class="yu1"><input type="text" placeholder="1 run" name="i1" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="2 run" name="i2" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="3 run" name="i3" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="four" name="i4" class="yt1"></span>
+            <span class="yu1"><input type="text" placeholder="six" name="i5" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="wideball" name="i6" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="noball" name="i7" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="run" name="i8" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="wicket" name="i9" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="over" name="i10" class="yt1"></span>
+            <span class="yu2"><input type="text" placeholder="tball" name="i11" class="yt1"></span>
+            <button class="btn-primary" style="border-radius: 20px;">add</button>
+        </div>
+    </form>
+
+    <table class="table table-bordered table-hover" style="margin-top: 20px; margin-left: 250px; width: 800px;">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>one</th>
+                <th>two</th>
+                <th>three</th>
+                <th>four</th>
+                <th>six</th>
+                <th>totalrun</th>
+                <th>wideball</th>
+                <th>noball</th>
+                <th>run</th>
+                <th>wiket</th>
+                <th>over</th>
+                <th>tball</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for i in jj%}
+            <tr>
+                <td>{{i.0}}</td>
+                <td>{{i.1}}</td>
+                <td>{{i.2}}</td>
+                <td>{{i.3}}</td>
+                <td>{{i.4}}</td>
+                <td>{{i.5}}</td>
+                <td>{{i.6}}</td>
+                <td>{{i.7}}</td>
+                <td>{{i.8}}</td>
+                <td>{{i.9}}</td>
+                <td>{{i.10}}</td>
+                <td>{{i.11}}</td>
+                <td>{{i.12}}</td>
+            </tr>
+            {%endfor%}
+        </tbody>
+
+    </table>
+    <div class="bn">
+        <a class="btn btn-primary" href="/point"> submit</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cricks11-Teaminfo</title>
+  <link rel="icon" type="x-icon" href="/static/img/log1.png">
+  <link rel="stylesheet" href="/static/css/admin_team.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="/static/js/jquery-3.7.1.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      background-image: url("/static/img/ground.png");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 1050px;
+      background-position-y: 25px;
+      background-position-x: 235px;
+
+
+    }
+
+    .v {
+      background: #8C8681;
+      text-align: right;
+      padding: 0 5%;
+      height: 695px;
+      width: 250px;
+      margin-top: -1%;
+      margin-left: -15px;
+    }
+
+    .l {
+      margin-top: -40px;
+
+      color: rgb(252, 250, 250);
+      font-size: 40px;
+    }
+
+    .h {
+      color: blue;
+      font-size: 50px;
+    }
+
+    .v img {
+      margin-top: 30px;
+      margin-left: -60px;
+      height: 80px;
+      width: 250px;
+    }
+
+    .v ul li i img {
+      height: 30px;
+      width: 45px;
+      top: -10px;
+      float: left;
+      margin-top: 2px;
+      margin-left: -5%;
+    }
+
+    .v ul {
+      list-style: none;
+      position: relative;
+    }
+
+    .v ul li a {
+      text-decoration: none;
+      color: rgb(247, 244, 244);
+      padding-top: 40px;
+      float: left;
+      margin-left: 10px;
+      font-size: 25px;
+      transition: all 0.2 ease;
+      display: block;
+    }
+
+    .v ul li a:hover {
+      color: aqua;
+    }
+
+    .i {
+      width: 235px;
+      margin-left: -50px;
+      box-shadow: 20px;
+    }
+
+
+    .rt {
+      width: 50%;
+      margin-left: 550px;
+      margin-top: -590px;
+      height: 50px;
+      align-items: center;
+      position: fixed;
+      font-size: 20px;
+    }
+
+
+    .alert {
+      width: 500px;
+      height: 50px;
+      text-align: center;
+      position: fixed;
+    }
+
+    .as
+
+    /*insrt button div*/
+      {
+      margin-top: -530px;
+      margin-left: 350px;
+      font-size: 30px;
+    }
+
+    .ml
+
+    /*insert button*/
+      {
+      background-color: #8C8681;
+      margin-left: 10px;
+      border: none;
+      padding: 10px;
+      color: white;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 10px;
+    }
+
+    .cj {
+      margin-left: 100px;
+      margin-top: 100px;
+      background-color: white;
+      border: black 1px solid;
+      height: 400px;
+      width: 400px;
+    }
+
+    .jk {
+      margin-top: 25px;
+      margin-left: 50px;
+      margin-bottom: 5px;
+    }
+
+
+    .xz
+
+    /*model hader*/
+      {
+      font-size: 30px;
+      background-color: #8C8681;
+      color: white;
+      padding: 10px;
+      margin-top: -5px;
+    }
+
+    .tu {
+      height: 30px;
+      width: 300px;
+      font-size: 20px;
+      padding: 0 0 0 10px;
+      margin-left: 50px;
+    }
+
+    .bn {
+      margin-left: 50px;
+    }
+
+    .jb {
+      background-color: #8C8681;
+      border: none;
+      padding: 10px;
+      color: white;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 10px;
+      margin-left: 160px;
+    }
+
+    .mb-3
+
+    /*file uploder*/
+      {
+      width: 300px;
+      margin-left: 50px;
+    }
+
+    /*table*/
+    .cv {
+      width: 82%;
+      margin-left: 180px;
+      border-collapse: collapse;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+
+
+    .vc {
+      background-color: #8C8681;
+      font-size: 20px;
+      border-radius: 20px;
+
+    }
+
+    .vc td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .bv td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      font-size: 20px;
+    }
+
+    .bv {
+      background-color: white;
+    }
+
+    .lk
+
+    /*scorllbar*/
+      {
+      overflow-y: scroll;
+      margin-top: 30px;
+      height: 300px;
+      margin-right: 35px;
+    }
+
+    .cl
+
+    /*imag*/
+      {
+      width: 30px;
+      height: 35px;
+      background-color: transparent;
+    }
+
+    .e {
+      margin-top: -40px;
+      margin-left: 700px;
+    }
+
+    .e1 {
+      width: 500px;
+      height: 35px;
+      font-size: 20px;
+      padding: 22px;
+      padding-left: 55px;
+      border-radius: 5px;
+    }
+
+    .e2 {
+      margin-left: -490px;
+    }
+
+    .cl1
+
+    /*imag*/
+      {
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="v">
+    <div style="margin-left: -20px;">
+      <img src="/static/img/logo.png">
+      <h1 class="l">Cricks<span class="h">11</span></h1>
+    </div>
+    <hr class="i">
+    <ul>
+      <li><a href="/admin_home">HOME</a></li>
+      <li><a href="/match">MATCH</a></li>
+      <li><a href="/admin_team" style="color: aqua;">TEAM</a></li>
+      <li><a href="/vouchers">CONTEST</a></li>
+      <li><a href="/adver">ADVERTICS</a></li>
+    </ul>
+  </nav>
+
+  <div class="rt">
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-success alert-dismissible">
+      <button href="#" class="close" data-dismiss="alert" aria-label="close">&times;</button>
+      {{message}}
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="as">
+    Add team<button class="ml" data-toggle="modal" data-target="#add">insert</button>
+  </div>
+
+  <form class="e" method="post" action="/search1">
+    <input type="text" name="v1" class="e1" placeholder="search here">
+    <a class="e2"><img src="/static/img/search.png" class="cl1"></a>
+  </form>
+
+  <!--add team-->
+  <div class="modal" id="add" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="cj">
+        <p class="xz">Add team <button type="button" class="close" data-dismiss="modal">&times;</button> </p>
+        <form action="/insert" method="POST">
+          <label class="bn">id:</label><br>
+          <input type="text" placeholder="id" name="id" class="tu"><br>
+          <label class="bn">team:</label><br>
+          <input type="text" placeholder="team" name="team" class="tu"><br> <br>
+          <button class="jb">insert</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="lk">
+    <table class="cv">
+      <tr class="vc">
+        <td>Id</td>
+        <td>Team</td>
+        <td>Delete</td>
+        <td>Edit</td>
+        <td>Player</td>
+      </tr>
+      {% for row in data %}
+      <tr class="bv">
+        <td>{{row.0}}</td>
+        <td>{{row.1}}</td>
+        <td><a href="/delete/{{row.1}}" class="btn btn-danger">Delete</a></td>
+        <td><a href="/edit/{{row.0}}" class="btn btn-warning" data-target="#edit{{row.0}}" data-toggle="modal">Edit</a>
+        </td>
+        <div class="modal" id="edit{{row.0}}" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="cj">
+              <p class="xz">edit team <button type="button" class="close" data-dismiss="modal">&times;</button> </p>
+              <form action="/edit1/{{row.0}}" method="POST" class="jk">
+                <label class="bn">id:</label><br>
+                <input type="text" placeholder="id" name="id" class="tu" value="{{row.0}}"><br>
+                <label class="bn">team:</label><br>
+                <input type="text" placeholder="team" name="team" class="tu" value="{{row.1}}"><br><br>
+
+                <button class="jb">update</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <td><a href="/admin_player/{{row.1}}" class="btn btn-primary">Show</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  <!--add player-->
+
+
+
+
+</body>
+
+</html>
