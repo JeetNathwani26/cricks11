@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/static/img/log1.icon.png" type="x-icon">
+  <title>Cricks11-Select player</title>
+  <link rel="stylesheet" href="/static/css/allplayer.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="/static/js/jquery-3.7.1.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-image: url('/static/img/wp12479367-narendra-modi-stadium-wallpapers.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 1500px;
+      background-position-y: -150px;
+      background-position-x: -180px;
+    }
+
+    .bv {
+      background-color: white;
+      height: 560px;
+      width: 500px;
+      margin-left: 730px;
+      margin-top: 30px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 50px white;
+    }
+
+    .bn {
+      background-color: #0A8043;
+      padding: 10px;
+      text-align: center;
+      height: 90px;
+      border-radius: 20px;
+    }
+
+    .bn a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    .bn a:hover {
+      color: black;
+    }
+
+    nav {
+      margin-top: -50px;
+      margin-left: 150px;
+    }
+
+    .bv1 {
+      background-color: white;
+      border-radius: 30px;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      margin-top: -90px;
+      margin-left: 420px;
+      box-shadow: 0px 0px 50px green;
+    }
+
+    .bv1 h3 {
+      font-size: 35px;
+      padding-top: 5px;
+
+    }
+
+    .bv1 h3:hover {
+      color: #0A8043
+    }
+
+    .vb {
+      height: 500px;
+      margin-top: -130px;
+    }
+
+    .vb1 {
+      margin-top: -230px;
+      margin-left: 170px;
+      position: fixed;
+    }
+
+    .vc {
+      height: 80px;
+      margin-left: -80px;
+      margin-top: -65px;
+
+    }
+
+    .nb {
+      color: white;
+      margin-left: -140px;
+      margin-top: 20px;
+      font-size: 30px;
+    }
+
+    .bn1 {
+      color: black;
+      font-size: 40px;
+    }
+
+    .be {
+      margin-left: -270px;
+      margin-top: 2px;
+    }
+
+    .fg1 {
+      margin-top: 60px;
+    }
+
+    .fg1 nav {
+      background-color: #0A8043;
+      padding: 10px;
+      height: 40px;
+      width: 80%;
+      margin-left: 50px;
+      box-shadow: 0px 0px 5px gray;
+    }
+
+    .l1 {
+      margin-left: 20px;
+      color: black;
+
+    }
+
+    .l2 {
+      margin-left: 30px;
+      color: #fff;
+    }
+
+    .l3 {
+      margin-left: 30px;
+      color: #fff;
+    }
+
+    .l4 {
+      margin-left: 30px;
+      color: #fff;
+    }
+
+    .fg1 nav a {
+
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px;
+      justify-content: center;
+    }
+
+    .fg1 nav a:hover {
+      color: black;
+    }
+
+    .gf {
+      margin-top: 50px;
+      margin-left: 130px;
+    }
+
+    .gf1 {
+      font-size: 30px;
+    }
+
+    .gf2 {
+      margin-left: 140px;
+      font-size: 30px;
+    }
+
+    .m4 {
+      margin-left: 120px;
+      margin-top: -10px;
+    }
+
+    .e5 {
+      height: 90px;
+      width: 90px;
+      margin-top: -50px;
+      margin-left: 80px;
+    }
+
+    .fg2 {
+      background-color: #fff;
+      padding: 10px;
+      height: 230px;
+      width: 80%;
+      margin-left: 50px;
+      box-shadow: 0px 0px 5px gray;
+      overflow-y: scroll;
+      height: 230px;
+    }
+
+    .e4 {
+      height: 60px;
+      width: 60px;
+      border-radius: 40px;
+      margin-top: -25px;
+      margin-left: 20px;
+
+    }
+
+    .ty {
+      margin-left: 180px;
+    }
+
+    .f1 {
+      margin-top: -39px;
+    }
+
+    .j2 {
+      margin-left: 170px;
+      border-radius: 10px;
+      height: 40px;
+      width: 70px;
+      border: none;
+    }
+
+    .j1 {
+      margin-left: 250px;
+      border-radius: 10px;
+      height: 40px;
+      width: 70px;
+
+    }
+
+    .f2 {
+      margin-top: 20px;
+    }
+
+    .d3 {
+      margin-top: -40px;
+    }
+
+    .e4 {
+      height: 60px;
+      width: 60px;
+      border-radius: 40px;
+      margin-top: -5px;
+      margin-left: 10px;
+
+    }
+
+    .e6 {
+      height: 50px;
+      width: 50px;
+      border-radius: 40px;
+      margin-top: 5px;
+      margin-left: 15px;
+    }
+
+    .e7 {
+      height: 30px;
+      width: 30px;
+      border-radius: 40px;
+      margin-top: 5px;
+      margin-left: 15px;
+    }
+
+    .r1 {
+      margin-left: 30px;
+      font-size: 17px;
+    }
+
+    .r3 {
+      margin-left: 210px;
+      margin-top: -40px;
+    }
+
+    .r4 {
+      margin-left: 290px;
+      margin-top: -40px;
+    }
+
+    .q1 {
+      font-size: 20px;
+      margin-left: 90px;
+      margin-top: -40px;
+    }
+
+    .jw {
+      margin-left: 230px;
+      margin-top: -45px;
+    }
+
+    .je {
+
+      width: 40px;
+      height: 40px;
+      border: 2px solid #ccc;
+      border-radius: 30px;
+      margin-left: 30px;
+    }
+
+    .je2 {
+
+      width: 40px;
+      height: 40px;
+      border: 2px solid #ccc;
+      border-radius: 30px;
+      top: -10px;
+      margin-left: 30px;
+    }
+
+    .je1 {
+
+      width: 40px;
+      height: 40px;
+      border: 2px solid #ccc;
+      border-radius: 30px;
+      margin-left: 30px;
+    }
+
+
+    .we {
+      margin-top: -36px;
+      margin-left: 240px;
+      border-radius: 50%;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .we1 {
+      margin-top: -40px;
+      margin-left: 245px;
+      border-radius: 50%;
+      color: black;
+      font-size: 20px;
+    }
+
+    .we2 {
+      margin-top: -40px;
+      margin-left: 300px;
+      border-radius: 50%;
+      color: black;
+      font-size: 20px;
+    }
+
+    .wee {
+      margin-top: -38px;
+      margin-left: 300px;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .modal-content {
+      margin-left: 450px;
+      margin-top: 150px;
+      height: 400px;
+      width: 400px;
+      background-image: url("/static/img/12105751884_256b1a7711_z-removebg-preview.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position-y: 70px;
+      background-position-x: 30px;
+      background-size: 350px;
+    }
+
+    .fd {
+      background-color: rgb(209, 137, 70);
+      width: 80px;
+      height: 90px;
+      border-radius: 10px;
+      margin-left: 60px;
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 10px;
+    }
+
+    .j21 {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .j21:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .j2 {
+      margin-left: 170px;
+      border-radius: 10px;
+      height: 40px;
+      width: 70px;
+      padding: 10px;
+      padding-left: 20px;
+    }
+
+    .jh {
+      margin-left: 450px;
+      margin-top: 150px;
+      height: 200px;
+      width: 400px;
+      background-color: #fff;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="bv">
+    <div class="bn">
+      <div class="be">
+        <img src="/static/img/logo.png" class="vc"><label class="nb">Cricks<span class="bn1">11</span></label>
+      </div>
+      <nav>
+        <a data-toggle="modal" href='#modal-id1' style="text-decoration: none;">Explore</a>
+        <div class="modal fade" id="modal-id1">
+          <div class="modal-dialog">
+            <div class="jh">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" style="color:black; text-align: center;">information</h4>
+              </div>
+              <div class="modal-body">
+                <h4>Are you sure!!!</h4>
+              </div>
+
+              <div class="modal-footer">
+                <a href="/home" class="btn btn-primary" style="text-decoration: none;">ok</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancle</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a data-toggle="modal" href='#modal-id2' style="text-decoration: none;">My voucher</a>
+        <div class="modal fade" id="modal-id2">
+          <div class="modal-dialog">
+            <div class="jh">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" style="color:black; text-align: center;">information</h4>
+              </div>
+              <div class="modal-body">
+                <h4>Are you sure!!!</h4>
+              </div>
+
+              <div class="modal-footer">
+                <a href="/myv1" class="btn btn-primary" style="text-decoration: none;">Ok</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancle</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="bv1">
+      <h3>{{user}}</h3>
+    </div>
+    <div class="gf">
+      <label class="gf1">{{hi1}}</label>
+      <label class="gf2">{{hi2}}</label>
+    </div>
+    <div class="m4">
+      <img src="/static/img/download-removebg-preview (1).png" class="e5">
+    </div>
+
+    <div class="fg1">
+      <nav>
+        <span style="margin-left: 120px; font-size: 20px; color: #fff;">select ca and vc</span>
+      </nav>
+    </div>
+    <div class="fg2">
+      {% if vb[0] in vb %}
+      <img src="/static/img/{{ vb2[0] }}" class="e6">
+      <div class="q1">{{ vb[0] }}</div>
+      <div class="r3">
+        {%if v==1%}
+        {%if vb[0] in g%}
+        <a href="/dplayer4/{{vb[0]}}/{{vb2[0]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">2x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je">ca</button>
+        {%endif%}
+        {%else%}
+        {%if vb[0] in h%}
+        <button style="background-color: grey; color: white;" disabled class="je2">ca</button>
+        {%else%}
+
+        <a href="/uplayer4/{{vb[0]}}/{{vb2[0]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">ca</button></a>
+
+        {%endif%}
+        {%endif%}
+      </div>
+      <div class="r4">
+
+        {%if s==1%}
+
+        {%if vb[0] in h%}
+        <a href="/dplayer5/{{vb[0]}}/{{vb2[0]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">1x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%endif%}
+
+        {%else%}
+        {%if vb[0] in g%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%else%}
+
+        <a href="/uplayer5/{{vb[0]}}/{{vb2[0]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">vc</button></a>
+
+        {%endif%}
+        {%endif%}
+      </div>
+      <hr>
+      {% endif %}
+
+
+      {% if vb[1] in vb %}
+      <img src="/static/img/{{ vb2[1] }}" class="e6">
+      <div class="q1">{{ vb[1] }}</div>
+      <div class="r3">
+        {%if v==1%}
+        {%if vb[1] in g%}
+        <a href="/dplayer4/{{vb[1]}}/{{vb2[1]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">2x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je">ca</button>
+        {%endif%}
+        {%else%}
+        {%if vb[1] in h%}
+        <button style="background-color: grey; color: white;" disabled class="je2">ca</button>
+        {%else%}
+
+        <a href="/uplayer4/{{vb[1]}}/{{vb2[1]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">ca</button></a>
+
+        {%endif%}
+        {%endif%}
+
+      </div>
+      <div class="r4">
+        {%if s==1%}
+
+        {%if vb[1] in h%}
+        <a href="/dplayer5/{{vb[1]}}/{{vb2[1]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">1x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%endif%}
+
+        {%else%}
+        {%if vb[1] in g%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%else%}
+
+        <a href="/uplayer5/{{vb[1]}}/{{vb2[1]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">vc</button></a>
+
+        {%endif%}
+        {%endif%}
+      </div>
+      <hr>
+      {%endif%}
+
+
+      {% if vb[2] in vb %}
+      <img src="/static/img/{{ vb2[2] }}" class="e6">
+      <div class="q1">{{ vb[2] }}</div>
+      <div class="r3">
+        {%if v==1%}
+        {%if vb[2] in g%}
+        <a href="/dplayer4/{{vb[2]}}/{{vb2[2]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">2x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je">ca</button>
+        {%endif%}
+        {%else%}
+        {%if vb[2] in h%}
+        <button style="background-color: grey; color: white;" disabled class="je2">ca</button>
+        {%else%}
+
+        <a href="/uplayer4/{{vb[2]}}/{{vb2[2]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">ca</button></a>
+
+        {%endif%}
+        {%endif%}
+
+      </div>
+      <div class="r4">
+        {%if s==1%}
+
+        {%if vb[2] in h%}
+        <a href="/dplayer5/{{vb[2]}}/{{vb2[2]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">1x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%endif%}
+
+        {%else%}
+        {%if vb[2] in g%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%else%}
+
+        <a href="/uplayer5/{{vb[2]}}/{{vb2[2]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">vc</button></a>
+
+        {%endif%}
+        {%endif%}
+      </div>
+      <hr>
+      {%endif%}
+
+      {% if vb[3] in vb %}
+      <img src="/static/img/{{ vb2[3] }}" class="e6">
+      <div class="q1">{{ vb[3] }}</div>
+      <div class="r3">
+        {%if v==1%}
+        {%if vb[3] in g%}
+        <a href="/dplayer4/{{vb[3]}}/{{vb2[3]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">2x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je">ca</button>
+        {%endif%}
+        {%else%}
+        {%if vb[3] in h%}
+        <button style="background-color: grey; color: white;" disabled class="je2">ca</button>
+        {%else%}
+
+        <a href="/uplayer4/{{vb[3]}}/{{vb2[3]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">ca</button></a>
+
+        {%endif%}
+        {%endif%}
+
+      </div>
+      <div class="r4">
+        {%if s==1%}
+
+        {%if vb[3] in h%}
+        <a href="/dplayer5/{{vb[3]}}/{{vb2[3]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">1x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%endif%}
+
+        {%else%}
+        {%if vb[3] in g%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%else%}
+
+        <a href="/uplayer5/{{vb[3]}}/{{vb2[3]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">vc</button></a>
+
+        {%endif%}
+        {%endif%}
+      </div>
+      <hr>
+      {%endif%}
+
+      {% if vb[4] in vb %}
+      <img src="/static/img/{{ vb2[4] }}" class="e6">
+      <div class="q1">{{ vb[4] }}</div>
+      <div class="r3">
+        {%if v==1%}
+        {%if vb[4] in g%}
+        <a href="/dplayer4/{{vb[4]}}/{{vb2[4]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">2x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je">ca</button>
+        {%endif%}
+        {%else%}
+        {%if vb[4] in h%}
+        <button style="background-color: grey; color: white;" disabled class="je2">ca</button>
+        {%else%}
+
+        <a href="/uplayer4/{{vb[4]}}/{{vb2[4]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">ca</button></a>
+
+        {%endif%}
+        {%endif%}
+
+      </div>
+      <div class="r4">
+        {%if s==1%}
+
+        {%if vb[4] in h%}
+        <a href="/dplayer5/{{vb[4]}}/{{vb2[4]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">1x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%endif%}
+
+        {%else%}
+        {%if vb[4] in g%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%else%}
+
+        <a href="/uplayer5/{{vb[4]}}/{{vb2[4]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">vc</button></a>
+
+        {%endif%}
+        {%endif%}
+      </div>
+      <hr>
+      {%endif%}
+
+      {% if vb[5] in vb %}
+      <img src="/static/img/{{ vb2[5] }}" class="e6">
+      <div class="q1">{{ vb[5] }}</div>
+      <div class="r3">
+        {%if v==1%}
+        {%if vb[5] in g%}
+        <a href="/dplayer4/{{vb[5]}}/{{vb2[5]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">2x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je">ca</button>
+        {%endif%}
+        {%else%}
+        {%if vb[5] in h%}
+        <button style="background-color: grey; color: white;" disabled class="je2">ca</button>
+        {%else%}
+
+        <a href="/uplayer4/{{vb[5]}}/{{vb2[5]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">ca</button></a>
+
+        {%endif%}
+        {%endif%}
+
+      </div>
+      <div class="r4">
+        {%if s==1%}
+
+        {%if vb[5] in h%}
+        <a href="/dplayer5/{{vb[5]}}/{{vb2[5]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">1x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%endif%}
+
+        {%else%}
+        {%if vb[5] in g%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%else%}
+
+        <a href="/uplayer5/{{vb[5]}}/{{vb2[5]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">vc</button></a>
+
+        {%endif%}
+        {%endif%}
+      </div>
+      <hr>
+      {%endif%}
+
+      {% if vb[6] in vb %}
+      <img src="/static/img/{{ vb2[6] }}" class="e6">
+      <div class="q1">{{ vb[6] }}</div>
+      <div class="r3">
+        {%if v==1%}
+        {%if vb[6] in g%}
+        <a href="/dplayer4/{{vb[6]}}/{{vb2[6]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">2x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je">ca</button>
+        {%endif%}
+        {%else%}
+        {%if vb[6] in h%}
+        <button style="background-color: grey; color: white;" disabled class="je2">ca</button>
+        {%else%}
+
+        <a href="/uplayer4/{{vb[6]}}/{{vb2[6]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">ca</button></a>
+
+        {%endif%}
+        {%endif%}
+
+      </div>
+      <div class="r4">
+        {%if s==1%}
+
+        {%if vb[6] in h%}
+        <a href="/dplayer5/{{vb[6]}}/{{vb2[6]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">1x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%endif%}
+
+        {%else%}
+        {%if vb[6] in g%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%else%}
+
+        <a href="/uplayer5/{{vb[6]}}/{{vb2[6]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">vc</button></a>
+
+        {%endif%}
+        {%endif%}
+      </div>
+      <hr>
+      {%endif%}
+
+
+      {% if vb[7] in vb %}
+      <img src="/static/img/{{ vb2[7] }}" class="e6">
+      <div class="q1">{{ vb[7] }}</div>
+      <div class="r3">
+        {%if v==1%}
+        {%if vb[7] in g%}
+        <a href="/dplayer4/{{vb[7]}}/{{vb2[7]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">2x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je">ca</button>
+        {%endif%}
+        {%else%}
+        {%if vb[7] in h%}
+        <button style="background-color: grey; color: white;" disabled class="je2">ca</button>
+        {%else%}
+
+        <a href="/uplayer4/{{vb[7]}}/{{vb2[7]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">ca</button></a>
+
+        {%endif%}
+        {%endif%}
+
+      </div>
+      <div class="r4">
+        {%if s==1%}
+
+        {%if vb[7] in h%}
+        <a href="/dplayer5/{{vb[7]}}/{{vb2[7]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">1x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%endif%}
+
+        {%else%}
+        {%if vb[7] in g%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%else%}
+
+        <a href="/uplayer5/{{vb[7]}}/{{vb2[7]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">vc</button></a>
+
+        {%endif%}
+        {%endif%}
+      </div>
+      <hr>
+      {%endif%}
+
+      {% if vb[8] in vb %}
+      <img src="/static/img/{{ vb2[8] }}" class="e6">
+      <div class="q1">{{ vb[8] }}</div>
+      <div class="r3">
+        {%if v==1%}
+        {%if vb[8] in g%}
+        <a href="/dplayer4/{{vb[8]}}/{{vb2[8]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">2x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je">ca</button>
+        {%endif%}
+        {%else%}
+        {%if vb[8] in h%}
+        <button style="background-color: grey; color: white;" disabled class="je2">ca</button>
+        {%else%}
+
+        <a href="/uplayer4/{{vb[8]}}/{{vb2[8]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">ca</button></a>
+
+        {%endif%}
+        {%endif%}
+
+      </div>
+      <div class="r4">
+        {%if s==1%}
+
+        {%if vb[8] in h%}
+        <a href="/dplayer5/{{vb[8]}}/{{vb2[8]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">1x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%endif%}
+
+        {%else%}
+        {%if vb[8] in g%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%else%}
+
+        <a href="/uplayer5/{{vb[8]}}/{{vb2[8]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">vc</button></a>
+
+        {%endif%}
+        {%endif%}
+      </div>
+      <hr>
+      {%endif%}
+
+      {% if vb[9] in vb %}
+      <img src="/static/img/{{ vb2[9] }}" class="e6">
+      <div class="q1">{{ vb[9] }}</div>
+      <div class="r3">
+        {%if v==1%}
+        {%if vb[9] in g%}
+        <a href="/dplayer4/{{vb[9]}}/{{vb2[9]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">2x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je">ca</button>
+        {%endif%}
+        {%else%}
+        {%if vb[9] in h%}
+        <button style="background-color: grey; color: white;" disabled class="je2">ca</button>
+        {%else%}
+
+        <a href="/uplayer4/{{vb[9]}}/{{vb2[9]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">ca</button></a>
+
+        {%endif%}
+        {%endif%}
+
+      </div>
+      <div class="r4">
+        {%if s==1%}
+
+        {%if vb[9] in h%}
+        <a href="/dplayer5/{{vb[9]}}/{{vb2[9]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">1x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%endif%}
+
+        {%else%}
+        {%if vb[9] in g%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%else%}
+
+        <a href="/uplayer5/{{vb[9]}}/{{vb2[9]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">vc</button></a>
+
+        {%endif%}
+        {%endif%}
+      </div>
+      <hr>
+      {%endif%}
+
+      {% if vb[10] in vb %}
+      <img src="/static/img/{{ vb2[10] }}" class="e6">
+      <div class="q1">{{ vb[10] }}</div>
+      <div class="r3">
+        {%if v==1%}
+        {%if vb[10] in g%}
+        <a href="/dplayer4/{{vb[10]}}/{{vb2[10]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">2x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je">ca</button>
+        {%endif%}
+        {%else%}
+        {%if vb[10] in h%}
+        <button style="background-color: grey; color: white;" disabled class="je2">ca</button>
+        {%else%}
+
+        <a href="/uplayer4/{{vb[10]}}/{{vb2[10]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">ca</button></a>
+
+        {%endif%}
+        {%endif%}
+
+      </div>
+      <div class="r4">
+        {%if s==1%}
+
+        {%if vb[10] in h%}
+        <a href="/dplayer5/{{vb[10]}}/{{vb2[10]}}" style="text-decoration: none; color: white;"><button
+            style="background-color:black;" class="je">1x</button></a>
+        {%else%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%endif%}
+
+        {%else%}
+        {%if vb[10] in g%}
+        <button style="background-color: grey; color: white;" disabled class="je2">vc</button>
+        {%else%}
+
+        <a href="/uplayer5/{{vb[10]}}/{{vb2[10]}}" style="text-decoration: none; color: white;"><button
+            style="background-color: green;" class="je">vc</button></a>
+
+        {%endif%}
+        {%endif%}
+      </div>
+      <hr>
+      {%endif%}
+    </div>
+    <div class="f2">
+      {%if v==1 and s==1%}
+      <a
+        href="/show1/{{d[0]}}/{{f[0]}}/{{d[1]}}/{{f[1]}}/{{d[2]}}/{{f[2]}}/{{d[3]}}/{{f[3]}}/{{d[4]}}/{{f[4]}}/{{d[5]}}/{{f[5]}}/{{d[6]}}/{{f[6]}}/{{d[7]}}/{{f[7]}}/{{d[8]}}/{{f[8]}}/{{d[9]}}/{{f[9]}}/{{d[10]}}/{{f[10]}}/{{g[0]}}/{{g[1]}}/{{h[0]}}/{{h[1]}}"><button
+          style="background-color: green; color: white;" class="j1">next</button></a>
+      <div class="f1">
+        <a data-toggle="modal" href="#modal-id" class="j21">
+          <div style="background-color:black; color: white;" class="j2" disabled>show</div>
+        </a>
+      </div>
+      {%else%}
+      <button style="background-color: grey; color: white;" disabled class="j1">next</button>
+      <div class="f1">
+        <a data-toggle="modal" href="#modal-id" class="j21">
+          <div style="background-color:black; color: white;" class="j2" disabled>show</div>
+        </a>
+      </div>
+
+      {%endif%}
+    </div>
+    <div class="modal fade" id="modal-id">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: green;">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" style="color: #fff; text-align: center;">My team</h4>
+          </div>
+          {% if d[0] in d%}
+          <div class="fd">
+            <img src="/static/img/{{f[0]}}" class="e4"><br>
+            <label style="margin-left: 15px;">1.{{d[0]}}</label>
+          </div>
+
+          {%else%}
+          <label>please select player..</label>
+          {%endif%}
+
+          {%if d[1] in d%}
+          <div class="fd" style="margin-top: -90px; margin-left: 160px;">
+            <img src="/static/img/{{f[1]}}" class="e4"
+              style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+            <label style="margin-left: 15px;">2.{{d[1]}}</label>
+          </div>
+          {%endif%}
+
+          {%if d[2] in d%}
+          <div class="fd" style="margin-top: -90px; margin-left: 260px;">
+            <img src="/static/img/{{f[2]}}" class="e4"
+              style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+            <label style="margin-left: 15px;">3.{{d[2]}}</label>
+          </div>
+          {%endif%}
+          {%if d[3] in d%}
+          <div class="fd" style="margin-top: 20px; margin-left: 20px;">
+            <img src="/static/img/{{f[3]}}" class="e4"
+              style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+            <label style="margin-left: 12px;">4.{{d[3]}}</label>
+          </div>
+          {%endif%}
+          {%if d[4] in d%}
+          <div class="fd" style="margin-top: -90px; margin-left: 110px;">
+            <img src="/static/img/{{f[4]}}" class="e4"
+              style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+            <label style="margin-left: 12px;">5.{{d[4]}}</label>
+          </div>
+          {%endif%}
+          {%if d[5] in d%}
+          <div class="fd" style="margin-top: -90px; margin-left: 202px;">
+            <img src="/static/img/{{f[5]}}" class="e4"
+              style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+            <label style="margin-left: 12px;">6.{{d[5]}}</label>
+          </div>
+          {%endif%}
+          {%if d[6] in d%}
+          <div class="fd" style="margin-top: -90px; margin-left: 292px;">
+            <img src="/static/img/{{f[6]}}" class="e4"
+              style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+            <label style="margin-left: 12px;">7.{{d[6]}}</label>
+          </div>
+          {%endif%}
+          {%if d[7] in d%}
+          <div class="fd" style="margin-top: 25px; margin-left: 20px;">
+            <img src="/static/img/{{f[7]}}" class="e4"
+              style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+            <label style="margin-left: 12px;">8.{{d[7]}}</label>
+          </div>
+          {%endif%}
+          {%if d[8] in d%}
+          <div class="fd" style="margin-top: -90px; margin-left: 110px;">
+            <img src="/static/img/{{f[8]}}" class="e4"
+              style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+            <label style="margin-left: 12px;">9.{{d[8]}}</label>
+          </div>
+          {%endif%}
+          {%if d[9] in d%}
+          <div class="fd" style="margin-top: -90px; margin-left: 202px;">
+            <img src="/static/img/{{f[9]}}" class="e4"
+              style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+            <label style="margin-left: 12px;">10.{{d[9]}}</label>
+          </div>
+          {%endif%}
+          {%if d[10] in d%}
+          <div class="fd" style="margin-top: -90px; margin-left: 292px;">
+            <img src="/static/img/{{f[10]}}" class="e4"
+              style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+            <label style="margin-left: 12px;">11.{{d[10]}}</label>
+          </div>
+          {%endif%}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

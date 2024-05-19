@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="/static/img/log1.icon.png" type="x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricks11 - Login</title>
+  <link rel="stylesheet" href="/static/css/login.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: url('/static/img/wp12479367-narendra-modi-stadium-wallpapers.jpg');
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 1500px;
+      background-position-y: -150px;
+      background-position-x: -150px;
+      backdrop-filter: brightness(100%);
+    }
+
+    .co {
+      background-color: white;
+      border-radius: 30px;
+      box-shadow: 0 0 60px rgba(0, 0, 50px, 100px);
+      overflow: hidden;
+      width: 300px;
+      margin-left: 300px;
+      margin-top: -50px;
+      box-shadow: 0px 0px 90px white;
+
+    }
+
+    .co-header {
+      background-color: #0A8043;
+      text-align: center;
+      box-shadow: 0px 0px 3px green;
+    }
+
+    .login-form {
+      padding: 20px;
+    }
+
+    .form1 {
+      margin-bottom: 15px;
+    }
+
+    .form1 label {
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form1 input {
+      width: 240px;
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form1 button {
+      background-color: #0A8043;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .form1 button:hover {
+      box-shadow: 0px 0px 5px green;
+    }
+
+    .vc {
+      height: 100px;
+      margin-left: -50px;
+    }
+
+    .bn {
+      color: white;
+      margin-left: -170px;
+      margin-top: -20px;
+      font-size: 40px;
+    }
+
+    .bn1 {
+      color: black;
+      font-size: 50px;
+    }
+
+    .vb {
+      text-decoration: none;
+      color: black;
+      font-size: 12px;
+    }
+
+    .vb1 {
+      text-decoration: none;
+      color: black;
+      margin-left: 90px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div style="margin-left: 120px; margin-top: 75px;">
+    <img src="/static/img/OIP__2_-removebg-preview (1).png" height="300px">
+  </div>
+
+
+  <div class="co">
+    <div class="co-header">
+
+      <img src="/static/img/logo.png" class="vc"><label class="bn">Cricks<span class="bn1">11</span></label>
+
+    </div>
+
+    <form class="login-form" action="/login" method="POST">
+      <div class="form1">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+      </div>
+      <div class="form1">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+      </div>
+      <div class="form1">
+        <button type="submit">Login</button>
+      </div>
+      </from>
+      <a href="/sign" class="vb">register now!!</a>
+      <a href="/forget" class="vb1">forget password</a>
+  </div>
+
+
+</body>
+
+</html>

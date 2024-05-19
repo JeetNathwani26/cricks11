@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/img/log1.icon.png" type="x-icon">
+    <title>Cricks11-Select player</title>
+    <link rel="stylesheet" href="/static/css/splyer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="/static/js/jquery-3.7.1.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        background-image: url('/static/img/wp12479367-narendra-modi-stadium-wallpapers.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 1500px;
+        background-position-y: -150px;
+        background-position-x: -180px;
+      }
+  
+      .bv {
+        background-color: white;
+        height: 550px;
+        width: 500px;
+        margin-left: 730px;
+        margin-top: 30px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 50px white;
+      }
+  
+      .bn {
+        background-color: #0A8043;
+        padding: 10px;
+        text-align: center;
+        height: 90px;
+        border-radius: 20px;
+      }
+  
+      .bn a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 5px;
+      }
+  
+      .bn a:hover {
+        color: black;
+      }
+  
+      nav {
+        margin-top: -50px;
+        margin-left: 150px;
+      }
+  
+      .bv1 {
+        background-color: white;
+        border-radius: 30px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        margin-top: -90px;
+        margin-left: 420px;
+        box-shadow: 0px 0px 50px green;
+      }
+  
+      .bv1 h3 {
+        font-size: 35px;
+        padding-top: 5px;
+  
+      }
+  
+      .bv1 h3:hover {
+        color: #0A8043
+      }
+  
+      .vb {
+        height: 300px;
+        margin-top: -130px;
+      }
+  
+      .vb1 {
+        margin-top: -230px;
+        margin-left: 170px;
+        position: fixed;
+      }
+  
+      .vc {
+        height: 80px;
+        margin-left: -80px;
+        margin-top: -65px;
+  
+      }
+  
+      .nb {
+        color: white;
+        margin-left: -140px;
+        margin-top: 20px;
+        font-size: 30px;
+      }
+  
+      .bn1 {
+        color: black;
+        font-size: 40px;
+      }
+  
+      .be {
+        margin-left: -270px;
+        margin-top: 2px;
+      }
+  
+      .fg1 {
+        margin-top: 60px;
+      }
+  
+      .fg1 nav {
+        background-color: #0A8043;
+        padding: 10px;
+        height: 35px;
+        width: 80%;
+        margin-left: 50px;
+        box-shadow: 0px 0px 5px gray;
+      }
+  
+      .l1 {
+        margin-left: 20px;
+        color: black;
+  
+      }
+  
+      .l2 {
+        margin-left: 30px;
+        color: #fff;
+      }
+  
+      .l3 {
+        margin-left: 30px;
+        color: #fff;
+      }
+  
+      .l4 {
+        margin-left: 30px;
+        color: #fff;
+      }
+  
+      .fg1 nav a {
+  
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        justify-content: center;
+      }
+  
+      .fg1 nav a:hover {
+        color: black;
+      }
+  
+      .gf {
+        margin-top: 50px;
+        margin-left: 130px;
+      }
+  
+      .gf1 {
+        font-size: 30px;
+      }
+  
+      .gf2 {
+        margin-left: 140px;
+        font-size: 30px;
+      }
+  
+      .m4 {
+        margin-left: 120px;
+        margin-top: -10px;
+      }
+  
+      .e5 {
+        height: 90px;
+        width: 90px;
+        margin-top: -50px;
+        margin-left: 80px;
+      }
+  
+      .sr {
+        overflow-y: scroll;
+        margin-top: 10px;
+        height: 230px;
+      }
+  
+      .fg2 {
+        background-color: #fff;
+        padding: 10px;
+        height: 190px;
+        width: 80%;
+        margin-left: 50px;
+        box-shadow: 0px 0px 5px gray;
+        overflow-y: scroll;
+        height: 230px;
+      }
+  
+      .e4 {
+        height: 60px;
+        width: 60px;
+        border-radius: 40px;
+        margin-top: -25px;
+        margin-left: 20px;
+  
+      }
+  
+      .ty {
+        margin-left: 180px;
+      }
+  
+      .f1 {
+        margin-top: -39px;
+      }
+  
+      .j2 {
+        margin-left: 170px;
+        border-radius: 10px;
+        height: 40px;
+        width: 70px;
+        padding: 10px;
+        padding-left: 20px;
+      }
+  
+      .j21 {
+        color: #fff;
+        text-decoration: none;
+      }
+  
+      .j21:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+  
+      .j1 {
+        margin-left: 250px;
+        border-radius: 10px;
+        height: 40px;
+        width: 70px;
+  
+      }
+  
+      .f2 {
+        margin-top: 7px;
+      }
+  
+      .d3 {
+        margin-top: -40px;
+      }
+  
+      .e4 {
+        height: 60px;
+        width: 60px;
+        border-radius: 40px;
+        margin-top: -5px;
+        margin-left: 10px;
+  
+      }
+  
+      .o1 {
+        height: 30px;
+        width: 30px;
+        border-radius: 40px;
+        margin-top: -5px;
+        margin-left: 330px;
+      }
+  
+      .de1 {
+        margin-top: -40px;
+      }
+  
+      .e6 {
+        height: 30px;
+        width: 30px;
+        border-radius: 40px;
+        margin-top: -5px;
+        margin-left: 330px;
+      }
+  
+      .gt {
+        margin-left: 200px;
+      }
+  
+      .modal-content {
+        margin-left: 450px;
+        margin-top: 150px;
+        height: 400px;
+        width: 400px;
+        background-image: url("/static/img/12105751884_256b1a7711_z-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position-y: 70px;
+        background-position-x: 30px;
+        background-size: 350px;
+      }
+  
+      .jh {
+        margin-left: 450px;
+        margin-top: 150px;
+        height: 200px;
+        width: 400px;
+        background-color: #fff;
+      }
+  
+      .fd {
+        background-color: rgb(209, 137, 70);
+        width: 80px;
+        height: 90px;
+        border-radius: 10px;
+        margin-left: 60px;
+        margin-top: 10px;
+        box-shadow: 5px rgb(240, 237, 237);
+        ;
+      }
+  
+      .fd label {
+        font-size: 11px;
+      }
+    </style>
+</head>
+<body>
+  <div class="rt">  
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-success alert-dismissible">
+        <button href="#" class="close" data-dismiss="alert" aria-label="close">&times;</button>
+        {{message}}
+    </div>  
+    {% endfor %}
+  </div>
+    <div class="bv">
+        <div class="bn">
+          <div class="be">
+            <img src="/static/img/logo.png" class="vc" ><label class="nb">Cricks<span class="bn1">11</span></label>
+          </div>  
+        <nav>
+            
+            
+            <a  data-toggle="modal" href='#modal-id1' style="text-decoration: none;">Explore</a>
+            <div class="modal fade" id="modal-id1">
+              <div class="modal-dialog">
+                <div class="jh">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"style="color:black; text-align: center;">information</h4>
+                  </div>                  
+                  <div class="modal-body">
+                    <h4>Are you sure!!!</h4>
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="/home" class="btn btn-primary" style="text-decoration: none;">ok</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancle</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <a  data-toggle="modal" href='#modal-id2' style="text-decoration: none;">My voucher</a>
+            <div class="modal fade" id="modal-id2">
+              <div class="modal-dialog">
+                <div class="jh">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"style="color:black; text-align: center;">information</h4>
+                  </div>                  
+                  <div class="modal-body">
+                    <h4>Are you sure!!!</h4>
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="/myv1" class="btn btn-primary" style="text-decoration: none;">Ok</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancle</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+          <div class="bv1"><h3>{{user}}</h3></div>
+
+          <div class="gf">
+              <label class="gf1">{{hi1}}</label>
+              <label class="gf2">{{hi2}}</label>
+          </div>
+          <div class="m4">
+            <img src="/static/img/download-removebg-preview (1).png" class="e5">
+           </div> 
+           <label class="ty">you select player : {{n}}/11</label>
+          <div class="fg1">
+            <nav>
+              <a href="/sp" class="l1">wk</a>
+              <a href="/sbat" class="l2">batsman</a>
+              <a href="/sallr" class="l2" >all-r</a>
+              <a href="/sbow" class="l2">bowler</a>
+            </nav>
+          </div>
+          <div class="fg2">
+              {%for i in bn%}
+                <img src="/static/img/{{i.2}}" class="e4">
+                <label class="gt1">{{i.1}}</label>
+               {%if n>=n1%}
+                 {% if i.1 in d %}
+                    <div class="d3">
+                      <a href="/dplayer/{{ i.1 }}/{{i.2}}"><img src="/static/img/remove.png" class="e6"></a> 
+                    </div>
+              
+                 {% else %}
+                 <div class="de1">
+                  <button style="background-color: grey; color: white;" disabled class="o1"></button>
+                 </div>
+                 {% endif %}
+             
+               {%else%}
+                 <div class="d3">
+                  {% if i.1 in d %}
+                   <a href="/dplayer/{{ i.1 }}/{{i.2}}"><img src="/static/img/remove.png" class="e6"></a> 
+                 {% else %}
+                   <a href="/uplayer/{{i.1}}/{{i.2}}"><img src="/static/img/plus.png" class="e6"></a>
+                 {% endif %}
+                 </div>
+
+               {%endif%}
+               <hr>
+              {%endfor%}
+              {%for e in bn1%}
+              <img src="/static/img/{{e.2}}" class="e4">
+              <label class="gt1">{{e.1}}</label>
+             {%if n>=n1%}
+              {% if e.1 in d %}
+               <div class="d3">
+                 <a href="/dplayer/{{ e.1 }}/{{e.2}}"><img src="/static/img/remove.png" class="e6"></a> 
+                </div>
+        
+                {% else %}
+                 <div class="d3">
+                    <button style="background-color: grey; color: white;" disabled class="o1"></button>
+                  </div>
+              {% endif %}
+             {%else%}
+               <div class="d3">
+                {% if e.1 in d %}
+                 <a href="/dplayer/{{ e.1 }}/{{e.2}}"><img src="/static/img/remove.png" class="e6"></a> 
+                {% else %}
+                 <a href="/uplayer/{{e.1}}/{{e.2}}"><img src="/static/img/plus.png" class="e6"></a>
+               {% endif %}
+               </div>
+             
+               
+              {%endif%} 
+              {%endfor%}
+              <hr> 
+          </div>
+          <div class="f2">
+            {%if n==n1%} 
+              <a href="/show"><button style="background-color: green; color: white;" class="j1">next</button></a>
+              <div class="f1">
+                <a data-toggle="modal" href="#modal-id" class="j21"><div style="background-color:black; color: white;" class="j2" disabled>show</div></a>
+              </div>
+            {%else%}
+              <button style="background-color: grey; color: white;" disabled class="j1">next</button>
+              <div class="f1">
+                <a data-toggle="modal" href="#modal-id" class="j21"><div style="background-color:black; color: white;" class="j2" disabled>show</div></a>
+              </div>
+              
+            {%endif%}  
+          </div>
+          
+            
+          <div class="modal fade" id="modal-id">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: green ;">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title"style="color: #fff; text-align: center;">My team</h4>
+                </div>
+                {% if d[0] in d%}
+                 <div class="fd">
+                  <img src="/static/img/{{f[0]}}" class="e4"style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+                  <label style="margin-left: 15px;">1.{{d[0]}}</label>
+                 </div>
+
+                 {%else%}
+                 <label>please select player..</label>
+                {%endif%}
+                
+                {%if d[1] in d%}
+                <div class="fd" style="margin-top: -90px; margin-left: 160px;">
+                  <img src="/static/img/{{f[1]}}" class="e4" style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+                  <label style="margin-left: 15px;">2.{{d[1]}}</label>
+                 </div>
+                {%endif%}
+                
+                {%if d[2] in d%}
+                <div class="fd" style="margin-top: -90px; margin-left: 260px;">
+                  <img src="/static/img/{{f[2]}}" class="e4" style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+                  <label style="margin-left: 15px;">3.{{d[2]}}</label>
+                 </div>
+                {%endif%}
+                {%if d[3] in d%}
+                <div class="fd" style="margin-top: 20px; margin-left: 20px;">
+                  <img src="/static/img/{{f[3]}}" class="e4" style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+                  <label style="margin-left: 12px;">4.{{d[3]}}</label>
+                 </div>
+                {%endif%}
+                {%if d[4] in d%}
+                <div class="fd" style="margin-top: -90px; margin-left: 110px;">
+                  <img src="/static/img/{{f[4]}}" class="e4" style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+                  <label style="margin-left: 12px;">5.{{d[4]}}</label>
+                 </div>
+                {%endif%}
+                {%if d[5] in d%}
+                <div class="fd" style="margin-top: -90px; margin-left: 202px;">
+                  <img src="/static/img/{{f[5]}}" class="e4" style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+                  <label style="margin-left: 12px;">6.{{d[5]}}</label>
+                 </div>
+                {%endif%}
+                {%if d[6] in d%}
+                <div class="fd" style="margin-top: -90px; margin-left: 292px;">
+                  <img src="/static/img/{{f[6]}}" class="e4" style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+                  <label style="margin-left: 12px;">7.{{d[6]}}</label>
+                 </div>
+                {%endif%}
+                {%if d[7] in d%}
+                <div class="fd" style="margin-top: 25px; margin-left: 20px;">
+                  <img src="/static/img/{{f[7]}}" class="e4" style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+                  <label style="margin-left: 12px;">8.{{d[7]}}</label>
+                 </div>
+                {%endif%}
+                {%if d[8] in d%}
+                <div class="fd" style="margin-top: -90px; margin-left: 110px;">
+                  <img src="/static/img/{{f[8]}}" class="e4" style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+                  <label style="margin-left: 12px;">9.{{d[8]}}</label>
+                 </div>
+                {%endif%}
+                {%if d[9] in d%}
+                <div class="fd" style="margin-top: -90px; margin-left: 202px;">
+                  <img src="/static/img/{{f[9]}}" class="e4" style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+                  <label style="margin-left: 12px;">10.{{d[9]}}</label>
+                 </div>
+                {%endif%}
+                {%if d[10] in d%}
+                <div class="fd" style="margin-top: -90px; margin-left: 292px;">
+                  <img src="/static/img/{{f[10]}}" class="e4" style="margin-top: 5px; height: 50px; width: 50px; margin-left: 15px ;"><br>
+                  <label style="margin-left: 12px;">11.{{d[10]}}</label>
+                 </div>
+                {%endif%}
+              </div>
+            </div>
+          </div>
+            
+           
+            
+          
+    </div>
+
+    <div class="vb1">
+      <img src="/static/img/OIP__2_-removebg-preview (1).png" class="vb">
+   </div>
+    
+</body>
+</html>

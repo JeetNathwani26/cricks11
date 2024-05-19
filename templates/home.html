@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="/static/img/log1.icon.png" type="x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricks11-Home</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="/static/js/jquery-3.7.1.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/static/css/home.css">
+  <style>
+    body {
+      padding: 0px;
+      margin: 0px;
+      background-image: url('/static/img/wp12479367-narendra-modi-stadium-wallpapers.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 1500px;
+      background-position-y: -150px;
+      background-position-x: -180px;
+    }
+
+    .bv {
+      background-color: white;
+      height: 550px;
+      width: 500px;
+      margin-left: 730px;
+      margin-top: 30px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 50px white;
+    }
+
+    .bn {
+      background-color: #0A8043;
+      padding: 10px;
+      text-align: center;
+      height: 100px;
+      border-radius: 20px;
+    }
+
+    .bn a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    .bn a:hover {
+      color: black;
+    }
+
+    nav {
+      margin-top: -50px;
+      margin-left: 150px;
+    }
+
+    .bv1 {
+      background-color: white;
+      border-radius: 30px;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      margin-top: -90px;
+      margin-left: 420px;
+      box-shadow: 0px 0px 50px green;
+    }
+
+    .bv1 h3 {
+      font-size: 35px;
+      padding-top: 5px;
+
+    }
+
+    .bv1 h3:hover {
+      color: #0A8043
+    }
+
+    .vb {
+      height: 300px;
+      margin-top: -130px;
+    }
+
+    .vb1 {
+      margin-top: -230px;
+      margin-left: 170px;
+      position: fixed;
+    }
+
+    .vc {
+      height: 80px;
+      margin-left: -80px;
+      margin-top: -65px;
+
+    }
+
+    .nb {
+      color: white;
+      margin-left: -140px;
+      margin-top: -20px;
+      font-size: 30px;
+    }
+
+    .bn1 {
+      color: black;
+      font-size: 40px;
+    }
+
+    .be {
+      margin-left: -270px;
+      margin-top: 40px;
+    }
+
+    .slowfade {
+      background-color: rgb(238, 234, 243);
+      size:cover;
+      height: 100px;
+      width: 95%;
+      margin-top: 40px;
+      margin-left: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      border: 1px black solid;
+    }
+
+    .slowfade .slide img {
+      position: absolute;
+      width: 195%;
+      height: 100px;
+    }
+
+    .fg1 {
+      margin-top: 60px;
+
+    }
+
+    .fg1 nav {
+      background-color: rgb(228, 227, 227);
+      padding: 10px;
+      width: 61%;
+      margin-left: 110px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 5px gray;
+
+    }
+
+    .fg1 nav a {
+      color: #000;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 7px;
+      margin-left: 5px;
+
+    }
+
+    .fg1 nav a:hover {
+      color: #0ccc66;
+    }
+
+    .yt {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .m1 {
+      background-color: rgb(228, 227, 227);
+      height: 90px;
+      width: 80%;
+      margin-top: 15px;
+      margin-left: 60px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 5px gray;
+    }
+
+    .sr {
+      overflow-y: scroll;
+      margin-top: 10px;
+      height: 230px;
+    }
+
+    .m2 {
+      padding-top: 40px;
+    }
+
+    .p1 {
+      font-size: 20px;
+      font-family: Felix Titling;
+    }
+
+    .p2 {
+      margin-left: 120px;
+      font-size: 20px;
+      font-family: Felix Titling;
+    }
+
+    .p3 {
+      margin-top: -60px;
+      margin-left: 170px;
+      font-size: 20px;
+
+    }
+
+    .m4 {
+      margin-left: 120px;
+      margin-top: -10px;
+    }
+
+    .m5 {
+      margin-left: 200px;
+    }
+
+    .e4 {
+      height: 60px;
+      width: 60px;
+      border-radius: 40px;
+      margin-top: -25px;
+      margin-left: 20px;
+
+    }
+
+    .m3 {
+      margin-left: 90px;
+      margin-top: -55px;
+    }
+
+    .e5 {
+      height: 70px;
+      width: 70px;
+      margin-top: -50px;
+      margin-left: 35px;
+    }
+
+    .e6 {
+      height: 60px;
+      width: 60px;
+      border-radius: 40px;
+      margin-top: -25px;
+      margin-left: 220px;
+    }
+    .myslide{
+      size:cover;
+      height: 100px;
+      width: 95%;
+      
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bv">
+    <div class="bn">
+      <div class="be">
+        <img src="/static/img/logo.png" class="vc"><label class="nb">Cricks<span class="bn1">11</span></label>
+      </div>
+      <nav>
+        <a href="/home">Explore</a>
+        <a href="/myv1">My voucher</a>
+      </nav>
+    </div>
+    <div class="bv1">
+      <h3>{{user}}</h3>
+    </div>
+    <div class="slowfade">
+      {% for i in dw%}
+      <div class="slide" style="max-width:500px">
+        <img src="/static/img/{{i.1}}" class="myslide">
+      </div>
+      {%endfor%}
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("myslide");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+    <div class="fg1">
+      <nav>
+        <a href="/home" style="color: #0ccc66;">Upcomming</a>
+        <a href="/Mlive">Live</a>
+        <a href="/Mcompleted">Complete</a>
+      </nav>
+    </div>
+    <div class="sr">
+      {% for r in sw%}
+      <a href="/contest/{{r.1}}/{{r.3}}/{{r.0}}" style="text-decoration: none; color: black;">
+        <div class="m1">
+          <div class="m2">
+            <img src="/static/img/{{r.2}}" class="e4">
+            <img src="/static/img/{{r.4}}" class="e6">
+          </div>
+          <div class="m4">
+            <img src="/static/img/download-removebg-preview (1).png" class="e5">
+          </div>
+          <div class="m3">
+            <label class="p1">{{r.1}} </label>
+            <label class="p2">{{r.3}} </label>
+          </div>
+          <div class="p3">{{r.5}} </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="vb1">
+    <img src="/static/img/OIP__2_-removebg-preview (1).png" class="vb">
+  </div>
+</body>
+
+</html>
