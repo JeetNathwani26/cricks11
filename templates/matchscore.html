@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/static/img/log1.icon.png" type="x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricks11-Matchscore</title>
+    <link rel="stylesheet" href="/static/css/matchscore.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="/static/js/jquery-3.7.1.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <style>
+      body
+{
+    background-image: url('/static/img/wp12479367-narendra-modi-stadium-wallpapers.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1500px;
+    background-position-y: -150px;
+    background-position-x: -180px;
+}
+.bv
+{
+    background-color:white;
+    height: 550px;
+    width: 500px;
+    margin-left: 730px;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px  white ;
+}
+.bn {
+  background-color:#0A8043 ;
+  padding: 10px;
+  text-align: center;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.bn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+}
+.bn a:hover
+{
+  color: black;
+}
+nav
+{
+  margin-top: -50px;
+  margin-left: 150px;
+}
+.bv1
+{
+  background-color: white;
+  border-radius: 30px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin-top: -90px;
+  margin-left: 420px;
+  box-shadow: 0px 0px 50px  green ;
+}
+.bv1 h3
+{
+    font-size: 35px;
+    padding-top: 5px;
+    
+}
+.bv1 h3:hover
+{
+  color:#0A8043
+}
+.vb
+{
+  height: 300px;
+  margin-top: -130px;
+}
+.vb1
+{
+  margin-top: -230px;
+  margin-left: 170px;
+  position: fixed;
+}
+.vc
+{
+height: 80px;
+margin-left: -80px;
+margin-top: -65px;
+
+}
+.nb
+{
+color: white;
+margin-left: -140px;
+margin-top: -20px;
+font-size: 30px;
+}
+.bn1
+{
+color:black;
+font-size: 40px; 
+}
+.be
+{
+margin-left: -270px;
+margin-top: 40px;
+}
+
+.fg1
+{
+    margin-top: 60px;
+   
+}
+.fg1 nav
+{
+  background-color:rgb(228, 227, 227) ;
+  padding: 10px;
+  width: 75%;
+  margin-left: 70px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px  gray;
+}
+.fg1 nav a
+{
+  color: #000;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+}
+.fg1 nav a:hover
+{
+  color: #0A8043;
+}
+
+.gf
+{
+    margin-top: 40px;
+    text-align: center;
+}
+.gf1
+{
+    font-size: 30px;
+}
+.gf2
+{
+    font-size: 30px;
+}
+.m4
+{
+   margin-left: 120px;
+   margin-top: -10px;
+}
+.e5
+{
+  height: 90px;
+  width: 90px;
+  margin-top: -50px;
+  margin-left: 90px;
+}
+.sr
+{
+  overflow-y: scroll;
+  margin-top: 10px;
+  height:230px;
+}
+.q1
+{
+    background-color:#0d703d ;
+    height: 90px;
+    width: 85%;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-left: 44px;
+    box-shadow: 0px 0px 5px  gray;
+    border: 5px solid white;
+}    
+.e4
+{
+  height: 60px;
+  width: 60px;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-left: 40px;
+} 
+.q22
+{
+  margin-top: 10px;  
+  margin-left: 50px;
+  padding: 10px;
+}
+.q21
+{
+  font-size: 25px;
+  font-family:Franklin Gothic Book;
+  font-style:bold;
+  color:#fff
+}
+.q3
+{
+  margin-left: 270px;
+  margin-top: -65px;
+}
+.q31
+{
+  font-size: 50px;
+  font-family:'Courier New', Courier, monospace;
+  color:#fff;
+}
+
+
+.yt
+{
+  text-decoration: none;
+  color: #000;
+}
+
+    </style>
+</head>
+<body>
+    <div class="bv">
+        <div class="bn">
+          <div class="be">
+            <img src="/static/img/logo.png" class="vc" ><label class="nb">Cricks<span class="bn1">11</span></label>
+          </div>  
+        <nav>
+          <a href="/home" style="text-decoration: none;">Explore</a>
+          <a href="/myv1" style="text-decoration: none;" >My voucher</a>
+          </nav>
+        </div>
+          <div class="bv1"><h3>{{user}}</h3></div>
+         <div class="h"> 
+          
+          <div class="gf">
+            
+              <label class="gf1"><span>{{hi1}}'s score </span>{{b}}/{{e}}</label><br>
+              <label class="gf2"><span>{{hi2}}'s score </span>{{t}}/{{u}}</label>  
+          </div>
+          <hr>
+        </div> 
+          <div class="fg1">
+            <nav>
+                <a href="/myc1" >My Contests</a>
+                <a href="/myteam1">My Team</a>
+                <a href="/score" >My score</a>
+                <a href="/mscore" style="color:green">Score</a>
+            </nav>
+          </div>
+
+          <div class="sr"> 
+
+            <hr>
+            <h4 style="text-align:center;">First Inning</h4>
+            <hr>
+
+            <hr>
+            <h4 style="text-align:center;">{{hi1}}'Batter</h4>
+            <hr>
+            
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>name</th>
+                  <th>run</th>
+                  <th>tball</th>
+                  <th>point</th>
+                </tr>
+              </thead>
+              <tbody>
+               {%for i in da%} 
+                <tr>
+                  <td>{{i.0}}</td>
+                  <td>{{i.1}}</td>
+                  <td>{{i.2}}</td>
+                  <td>{{i.3}}</td>
+                </tr>
+                {%endfor%} 
+              </tbody>
+            </table>
+
+            <hr>
+            <h4 style="text-align:center;">{{hi2}}'bowler</h4>
+            <hr>
+            
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>name</th>
+                  <th>run</th>
+                  <th>wicket</th>
+                  <th>over</th>
+                  <th>point</th>
+                </tr>
+              </thead>
+              <tbody>
+               {%for i in da1%} 
+                <tr>
+                  <td>{{i.0}}</td>
+                  <td>{{i.1}}</td>
+                  <td>{{i.2}}</td>
+                  <td>{{i.3}}</td>
+                  <td>{{i.4}}</td>
+                </tr>
+                {%endfor%} 
+              </tbody>
+            </table>
+
+
+            <hr>
+            <h4 style="text-align:center;">{{hi2}}'Scorecrad</h4>
+            <hr>
+            
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>name</th>
+                  <th>run</th>
+                  <th>wicket</th>
+                  <th>point</th>
+                </tr>
+              </thead>
+              <tbody>
+               {%for i in daa%} 
+                <tr>
+                  <td>{{i.0}}</td>
+                  <td>{{i.1}}</td>
+                  <td>{{i.2}}</td>
+                  <td>{{i.3}}</td>
+                </tr>
+                {%endfor%} 
+              </tbody>
+            </table> 
+            <hr>
+            <h4 style="text-align:center;">{{hi1}}'bowler</h4>
+            <hr>
+            
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>name</th>
+                  <th>run</th>
+                  <th>wicket</th>
+                  <th>over</th>
+                  <th>point</th>
+                </tr>
+              </thead>
+              <tbody>
+               {%for i in da2%} 
+                <tr>
+                  <td>{{i.0}}</td>
+                  <td>{{i.1}}</td>
+                  <td>{{i.2}}</td>
+                  <td>{{i.3}}</td>
+                  <td>{{i.4}}</td>
+                </tr>
+                {%endfor%} 
+              </tbody>
+            </table>           
+          </div> 
+
+
+          
+    </div>
+    <div class="vb1">
+      <img src="/static/img/OIP__2_-removebg-preview (1).png" class="vb">
+    </div>
+</body>
+</html>
